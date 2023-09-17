@@ -19,7 +19,7 @@ spec:
           # 여러분의 image 주소를 입력해주세요.
           image: krmp-d2hub-idock.9rum.cc/dev-test/repo_69ce77317793
           env:
-          - name: http_svc
+          - name: http-svc
             valueFrom:
               configMapKeyRef:
                  name: http_svc
