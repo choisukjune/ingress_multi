@@ -1,0 +1,43 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: backend
+  labels:
+    app: backend
+spec:
+  selector:
+    matchLabels:
+      app: backend
+  template:
+    metadata:
+      labels:
+        app: backend
+    spec:
+      containers:
+        - name: backend
+          # 여러분의 image 주소를 입력해주세요.
+          image: krmp-d2hub-idock.9rum.cc/dev-test/repo_69ce77317793
+          env:
+          - name: http.svc
+            valueFrom:
+              configMapKeyRef:
+                 name: http.svc
+                 key: http_svc_2
+---
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: backend
+  name: backend
+spec:
+  ports:
+    - name: 3000-3000
+      port: 3000
+      protocol: TCP
+      targetPort: 3000
+  selector:
+    app: backend
+  type: LoadBalancer
+---

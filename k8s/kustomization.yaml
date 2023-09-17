@@ -2,4 +2,5 @@ namespace: krampoline
 resources:
   - configmap.yaml
   - http_svc_1.yaml
+  - http_svc_2.yaml
   - ingress.yaml
