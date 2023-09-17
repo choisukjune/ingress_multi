@@ -18,7 +18,7 @@ spec:
             # 여러분의 app path 를 넣어주세요.
             path: /kb8e0dc3e7ba8a/aaa(/|$)(.*)
           - backend:
-              serviceName: frontend
+              serviceName: backend
               servicePort: 3000
             # 여러분의 app path 를 넣어주세요.
             path: /kb8e0dc3e7ba8a/bbb(/|$)(.*)
