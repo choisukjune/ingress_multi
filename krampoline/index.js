@@ -8,6 +8,9 @@ var handleRequest = function(request, response) {
 
   response.writeHead(200);
 
+  var r = ""
+      r += "Hello World! I'm User server "+os.hostname() +" \n";
+      r += "configmap : " + process.env.HTTP_SVC;
   response.end("Hello World! I'm User server "+os.hostname() +" \n");
 
 
@@ -18,7 +21,7 @@ var handleRequest = function(request, response) {
 
 		Date(Date.now()).toLocaleString()+
 
-		"] "+os.hostname() +  " - " + process.env.http_svc );
+		"] "+os.hostname() +  " - " + process.env.HTTP_SVC );
 
 }
 
