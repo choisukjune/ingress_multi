@@ -6,7 +6,7 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
   labels:
     app.kubernetes.io/managed-by: kargocd
-  name: http_svc_ingress
+  name: http.svc.ingress
   namespace: default
 spec:
   rules:
