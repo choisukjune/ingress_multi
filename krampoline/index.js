@@ -11,7 +11,7 @@ var handleRequest = function(request, response) {
   var r = ""
       r += "Hello World! I'm User server "+os.hostname() +" \n";
       r += "configmap : " + process.env.HTTP_SVC;
-  response.end("Hello World! I'm User server "+os.hostname() +" \n");
+  response.end(r);
 
 
 
