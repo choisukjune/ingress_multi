@@ -4,4 +4,4 @@ metadata:
   name: http-svc
 data:
   HTTP_SVC_1 : http_svc_1
-  HTTP_SVC_2 : http_svc_1
+  HTTP_SVC_2 : http_svc_2
